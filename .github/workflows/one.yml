@@ -1,0 +1,11 @@
+name: demoPipeline
+on: push
+jobs:
+  one:
+    name: step1
+    runs-on: ubuntu-22.04
+    steps:
+      - name: running_ls
+        run: |
+          ls -ltr
+          date
