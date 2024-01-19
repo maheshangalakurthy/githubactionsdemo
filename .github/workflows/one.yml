@@ -1,5 +1,8 @@
 name: GenerateASCIIArtwork
-on: push
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   build_job_1:
     runs-on: ubuntu-latest
